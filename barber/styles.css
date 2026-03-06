@@ -1,0 +1,157 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #f5f0eb;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(245, 240, 235, 0.95);
+  border-bottom: 1px solid #e0d9d0;
+}
+.nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  color: #4a4a4a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.nav-links a:hover { color: #1a1a1a; }
+
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 6rem;
+  text-align: center;
+}
+.hero-tagline {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.9rem;
+  color: #8b7355;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+.hero h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin: 0 0 1rem;
+}
+.hero-text {
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  max-width: 28rem;
+  margin: 0 auto 2rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #f5f0eb;
+  background: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover { background: #333; }
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+.section-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 2rem;
+  text-align: center;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+.service-card {
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #e0d9d0;
+  border-radius: 8px;
+}
+.service-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: #1a1a1a;
+}
+.service-card p {
+  color: #5a5a5a;
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+.price {
+  font-weight: 700;
+  color: #8b7355;
+  font-size: 1rem;
+}
+
+.hours { background: #fff; border-top: 1px solid #e0d9d0; }
+.hours-box {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.5rem;
+}
+.hours-box p { margin: 0.5rem 0; color: #4a4a4a; }
+.hours-address { margin-top: 1.5rem; font-size: 0.95rem; color: #8b7355; }
+.contact { text-align: center; }
+.contact p { color: #5a5a5a; }
+.contact-phone { font-size: 1.25rem; margin-top: 1rem; }
+.contact-phone a { color: #1a1a1a; font-weight: 700; text-decoration: none; }
+.contact-phone a:hover { text-decoration: underline; }
+
+.footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: 0.9rem;
+  color: #8b7355;
+  border-top: 1px solid #e0d9d0;
+}
